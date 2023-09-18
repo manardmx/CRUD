@@ -8,8 +8,8 @@ using Mysql database and pdo
 to use this app 
 first install the database with name "users" and everythings will work
 Yol will have
-Index page
-Create page
-Edit page
+Index page ,
+Create page ,
+Edit page ,
 and delete
 
