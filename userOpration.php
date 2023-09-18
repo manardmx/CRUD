@@ -20,7 +20,7 @@ class UserOpration {
     try{
       $stm = $this->conn->prepare("INSERT INTO users(firstName,lastName,address)values(?,?,?)");
       $stm->execute([$this->proprties['firstName'],$this->proprties['lastName'],$this->proprties['address']]);
-      echo "<script>alert('data saved successfuly');document.location='showAllUsers.php'</script>";
+      echo "<script>alert('data saved successfuly');document.location='index.php'</script>";
     }catch(Exception $e){
          return $e->getMessage();
     }
@@ -59,7 +59,7 @@ public function edit(){
      WHERE id=?");
     $stm->execute([$this->proprties['firstName'],$this->proprties['lastName'],
     $this->proprties['address'],$this->proprties['id']]);
-    echo "<script>alert('data updated successfuly');document.location='showAllUsers.php'</script>";
+    echo "<script>alert('data updated successfuly');document.location='index.php'</script>";
   }catch(Exception $e){
        return $e->getMessage();
   }

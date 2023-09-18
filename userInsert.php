@@ -7,7 +7,7 @@ if(isset($_POST['save'])){
   $user->address=$_POST['address'];
   $user->insert();
   echo 'ooo';
-  echo "<script>alert('data saved successfuly');document.location='showAllUsers.php'</script>";
+  echo "<script>alert('data saved successfuly');document.location='index.php'</script>";
 }
 ?>
 <html>
